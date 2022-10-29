@@ -1,0 +1,39 @@
+# Don't include the .git history in the Docker image:
+.git
+
+app/cgm-remote-monitor/bower_components/
+app/cgm-remote-monitor/node_modules/
+
+
+app/cgm-remote-monitor/bundle/bundle.out.js
+
+app/cgm-remote-monitor/.vscode/
+app/cgm-remote-monitor/.idea/
+app/cgm-remote-monitor/*.iml
+app/cgm-remote-monitor/my.env
+app/cgm-remote-monitor/my.*.env
+app/cgm-remote-monitor/*.pem
+
+app/cgm-remote-monitor/static/bower_components/
+app/cgm-remote-monitor/.*.sw?
+app/cgm-remote-monitor/.DS_Store
+
+app/cgm-remote-monitor/.vagrant
+app/cgm-remote-monitor//iisnode
+
+# istanbul output
+app/cgm-remote-monitor/coverage/
+
+app/cgm-remote-monitor/npm-debug.log
+app/cgm-remote-monitor/*.heapsnapshot
+
+app/cgm-remote-monitor/tmp
+app/cgm-remote-monitor/.vs
+app/cgm-remote-monitor/cgm-remote-monitor.njsproj
+app/cgm-remote-monitor/cgm-remote-monitor.sln
+app/cgm-remote-monitor/obj/Debug
+app/cgm-remote-monitor/*.bat
+
+# directories created by docker-compose.yml
+app/cgm-remote-monitor/mongo-data/
+app/cgm-remote-monitor/letsencrypt/
