@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="server.js" type="NodeJSConfigurationType" application-parameters="dotenv_config_path=./my.env" nameIsGenerated="true" node-parameters="-r dotenv/config" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/app/cgm-remote-monitor">
+    <method v="2" />
+  </configuration>
+</component>
