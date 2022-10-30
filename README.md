@@ -11,9 +11,14 @@ Now I moved my code to this monorepo and created Docker image for quick testing 
 **STATUS:** Highly experimental. I was running it for 2 weeks with minor issues with xDrip, without pump.
 All issues I experienced are related to uniqueness of data that I am still trying to understand.
 
-## Features (existing and planned)
+## Features
 
-TODO
+* small change in [Nightscout](https://github.com/k2s/cgm-remote-monitor/commit/89bd15e0d35cbe07a1304e5199742db2553ac29f) to allow usage of custom storage
+* it is possible to develop custom storage modules outside of main Nightscout repository
+* working [SQLite storage module]() developed in mono repository
+* CLI tool to import MongoDB dump to SQLite database
+* CLI tool to export SQLite database to MongoDB dump (TODO)
+* Docker image to easy deploy or test the SQLite storage module  
 
 ## Quick start with Docker
  
