@@ -21,7 +21,7 @@ I created Docker image that could be used to quickly evaluate this experimental 
 
 ```
 # start the Docker instance with Sqlite DB stored on local disk  
-docker run --name ns --rm -v $PWD/ns-data:/mnt bigm/nightscout-sqlite:latest
+docker run --name ns --rm -v $PWD/ns-data:/mnt bigm/nightscout-experimental-sqlite:latest
 
 # to see trace log messages
 tail -f  $PWD/ns-data/storage-sqlite.log
@@ -31,6 +31,20 @@ docker exec -ti ns ngrok http 1337 --authtoken $NGAUTH
 ```
 
 **STATUS:** Highly experimental. This Docker image was not tested in production and configuration will probably be changed in the future.
+
+## Import from MongoDB dump
+
+* create backup of your MongoDB database with `mongodump` tool
+* place the database to folder `./mydbdump` (this folder has to contain bson files)
+* run following command
+
+```bash
+docker run --name ns --rm -v $PWD/ns-data:/mnt -v $PWD/mydbdump:/dump bigm/nightscout-experimental-sqlite:latest \
+  /opt/packages/nightscout-storage-sqlite/bin/sqlite-storage.mjs import /mnt/nightscout.sqlite /dump/
+```
+
+* it will create `./ns-data/nightscout.sqlite` database
+* process and errors are logged into `./ns-data/nightscout.sqlite.log`
 
 ## Install
 

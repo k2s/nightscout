@@ -1,9 +1,11 @@
 const path = require('path')
-const fs = require('fs-extra')
 const sqlite3 = require('sqlite3')
 const { open } = require('sqlite')
 const Find = require('./_find')
-const { buildHints } = require('./_collection-hints')
+const {
+  buildHints,
+  createCollection
+} = require('./_collection-hints')
 const pino = require('pino')
 const randomString = require('randomized-string')
 
@@ -72,6 +74,12 @@ class Collection {
 
       if (query.sort) {
         if (typeof query.sort.keyOrList === 'object') {
+          const sortFields = Object.keys(query.sort.keyOrList).join(',')
+          if (sortFields !== d.tsField && (!d.index || !d.index.hasOwnProperty(sortFields))) {
+            // TODO maybe remove later
+            log.debug(`maybe not indexed sort search ${this.name}.${sortFields}`)
+          }
+
           for (let [k, v] of Object.entries(query.sort.keyOrList)) {
             if (k === d.tsField) {
               sort.push('ts' + (v < 0 ? ' DESC' : ''))
@@ -89,7 +97,6 @@ class Collection {
               //   sort.push(`JSON_EXTRACT(json, '$.${k}')` + (v < 0 ? ' DESC' : ''))
               // }
               // if (collection === this.driver.env.profile_collection) debugger
-              log.debug(`maybe not indexed sort property ${this.name}.${k}`)
               sort.push(`JSON_EXTRACT(json, '$.${k}')` + (v < 0 ? ' DESC' : ''))
               // SELECT profile.* FROM profile, json_each(profile.json) WHERE key='startDate' ORDER BY json_each.atom DESC LIMIT 0, 1
             }
@@ -213,35 +220,43 @@ class Collection {
       length: 24
     }))
     update._id = id
-    this._d.run(`INSERT INTO ${this.name} (_id, ts, json) VALUES (:id, :ts, :json) ON CONFLICT DO UPDATE SET ts=:ts, json=:json`, {
-      ':id': id,
-      ':ts': d.tsAsString ? Date.parse(selector[d.tsField]) : selector[d.tsField],
-      ':json': this._pack(this.name, update)
-    })
-      .then(() => {
-        log.trace({
-          collection: this.name,
-          selector,
-          update,
-          options
-        }, 'update')
-
-        const r = {
-          result:
-            {
-              'n': 1,
-              'nModified': 1, // TODO ?
-              'upserted': [
-                {
-                  'index': 0,
-                  '_id': id
-                }
-              ],
-              'ok': 1
-            }
-        }
-        callback(null, r)
+    let stmt
+    if (d.tsField) {
+      stmt = this._d.run(`INSERT INTO ${this.name} (_id, ts, json) VALUES (:id, :ts, :json) ON CONFLICT DO UPDATE SET ts=:ts, json=:json`, {
+        ':id': id,
+        ':ts': d.tsAsString ? Date.parse(selector[d.tsField]) : selector[d.tsField],
+        ':json': this._pack(this.name, update)
       })
+    } else {
+      stmt = this._d.run(`INSERT INTO ${this.name} (_id, json) VALUES (:id, :json) ON CONFLICT DO UPDATE SET json=:json`, {
+        ':id': id,
+        ':json': this._pack(this.name, update)
+      })
+    }
+    stmt.then(() => {
+      log.trace({
+        collection: this.name,
+        selector,
+        update,
+        options
+      }, 'update')
+
+      const r = {
+        result:
+          {
+            'n': 1,
+            'nModified': 1, // TODO ?
+            'upserted': [
+              {
+                'index': 0,
+                '_id': id
+              }
+            ],
+            'ok': 1
+          }
+      }
+      callback(null, r)
+    })
       .catch(err => {
         log.error({
           collection: this.name,
@@ -341,10 +356,10 @@ class Collection {
 }
 
 class SqliteStorage {
-  constructor (env, db) {
-    this.env = env
+  constructor (env, db, def = null) {
+    this._env = env
     this._d = db
-    def = buildHints(env)
+    this._def = def || buildHints(env)
     log.debug('SqliteStorage constructed')
   }
 
@@ -353,20 +368,7 @@ class SqliteStorage {
   }
 
   ensureIndexes (collection, fields) {
-    if (collection === def.entries_collection) {
-      // this table was already created
-      return
-    }
-
-    collection._d.exec(
-      `CREATE TABLE IF NOT EXISTS '${collection.name}' 
-(_id NOT NULL, ts INTEGER NOT NULL UNIQUE, json TEXT, PRIMARY KEY('_id')) ; 
-CREATE UNIQUE INDEX IF NOT EXISTS 'IDX_${collection.name}' ON '${collection.name}'(ts);
-`).then(r => { //
-      console.log(collection.name, 'created') // fields, r
-    }).catch(ex => {
-      console.error(ex)
-    })
+    // all needed was created based on _collection-hints.js
   }
 
   get db () {
@@ -443,19 +445,20 @@ class BuildSqlite {
           })
         })
 
-        const collection = this.env.entries_collection
-        return db.exec(`
-CREATE TABLE IF NOT EXISTS 'auth_roles' (_id NOT NULL, ts INTEGER NOT NULL UNIQUE, json TEXT, PRIMARY KEY('_id')); 
-CREATE UNIQUE INDEX IF NOT EXISTS 'IDX_auth_roles' ON 'auth_roles'(ts);
+        db.on('trace', data => {
+          // TODO remove or make configurable or only in development?
+          log.trace(data)
+        })
 
-CREATE TABLE IF NOT EXISTS 'auth_subjects' (_id NOT NULL, ts INTEGER NOT NULL UNIQUE, json TEXT, PRIMARY KEY('_id')); 
-CREATE UNIQUE INDEX IF NOT EXISTS 'IDX_auth_subjects' ON 'auth_subjects'(ts);
+        // create tables and indexes
+        def = buildHints(this.env)
+        const a = []
+        for (const [name, d] of Object.entries(def)) {
+          a.push(createCollection(db, name, d))
+        }
 
-CREATE TABLE IF NOT EXISTS '${collection}' (_id NOT NULL, ts INTEGER NOT NULL UNIQUE, json TEXT, PRIMARY KEY('_id')); 
-CREATE UNIQUE INDEX IF NOT EXISTS 'IDX_${collection}_ts_type' ON '${collection}'(ts, JSON_EXTRACT(json, '$.type'));
-CREATE UNIQUE INDEX IF NOT EXISTS 'IDX_${collection}_date' ON '${collection}'(JSON_EXTRACT(json, '$.date'));
-`).then(r => { //
-          cb(null, new SqliteStorage(this.env, db))
+        Promise.all(a).then(() => { //
+          cb(null, new SqliteStorage(this.env, db, def))
         })
       })
       .catch(err => {
