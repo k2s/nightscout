@@ -95,3 +95,4 @@ Currently, not committed storage drivers (mainly used for development):
 - [ ] sqlite driver is very early prototype
 - [ ] what other drivers could be of benefit (eg. rqlite)
 - [ ] would cache driver help with load that will not use DB for repeating queries without write influencing this tables
+- [ ] do we need support for full set of Mongo filter? there are multiple libraries that transfer JSON filter to SQL 
