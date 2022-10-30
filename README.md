@@ -1,4 +1,4 @@
-# Nightscout Web Monitor with alternative storage
+# Nightscout Web Monitor with alternative SQLite storage
 
 Sqlite3 supports JSON documents and is also able to apply indexes on structured data. For more information see https://www.sqlite.org/json1.html.
 
