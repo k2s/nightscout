@@ -86,6 +86,25 @@ Currently, not committed storage drivers (mainly used for development):
 - `STORAGE_CLASS=proxy@nightscout-storage-basic`: main purpose is to catch all calls to original MongoDB driver for analysis
 - `STORAGE_CLASS=multi@nightscout-storage-basic`: distribute all writes to multiple storage drivers, reads are returned from first driver and other responses are compared to be the same with the first 
 
+
+### Examples of diver activation
+
+Use one of this examples to configure storage driver.
+
+#### proxy
+
+```bash
+# proxy class that is logging requests and fallbacking to other engine (MongoDB is default)
+STORAGE_CLASS=proxy@nightscout-storage-basic
+```
+
+#### sqlite
+
+```bash
+STORAGE_CLASS=@nightscout-storage-sqlite
+STORAGE_SQLITE_DB=/tmp/nightscout.sqlite3
+```
+
 ## TODO
 
 - [ ] what would be correct way to configure storages with `process.env` ? (`STORAGE_CLASS`, `STORAGE_SQLITE_DB`)
