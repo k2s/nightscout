@@ -276,7 +276,7 @@ class Collection {
   insertOne (doc, options, callback) {
     if (typeof options === 'function') {
       callback = options
-      options = undefined
+      // options = undefined
     }
 
     // TODO use collection class
@@ -332,7 +332,7 @@ class Collection {
   remove (selector, options, callback) {
     if (typeof options === 'function') {
       callback = options
-      options = undefined
+      // options = undefined
     }
 
     const sql = this._makeSql(this.name, { filter: selector })
@@ -392,34 +392,36 @@ class SqliteStorage {
 }
 
 class BuildSqlite {
-  constructor (env) {
+  constructor (env, useThisLog = false) {
     this.env = env
 
-    log = pino({
-      name: 'sqlite',
-      level: 'trace',
-      transport: {
-        targets: [
-          {
-            target: 'pino/file',
-            level: process.env.STORAGE_SQLITE_LOGFILE_LEVEL || 'trace',
-            options: {
-              destination: path.resolve(process.cwd(), process.env.STORAGE_SQLITE_LOGFILE || 'tmp/storage-sqlite.log'),
-              append: false
+    log = useThisLog
+      ? useThisLog
+      : pino({
+        name: 'sqlite',
+        level: 'trace',
+        transport: {
+          targets: [
+            {
+              target: 'pino/file',
+              level: env.SQLITE_LOGFILE_LEVEL || 'trace',
+              options: {
+                destination: path.resolve(process.cwd(), env.SQLITE_LOGFILE || 'tmp/storage-sqlite.log'),
+                append: false
+              }
+            },
+            {
+              target: 'pino-pretty',
+              level: env.SQLITE_CONSOLE_LEVEL || 'debug',
+              options: {
+                translateTime: true,
+                // levelFirst: true,
+                colorize: true
+              }
             }
-          },
-          {
-            target: 'pino-pretty',
-            level: process.env.STORAGE_SQLITE_CONSOLE_LEVEL || 'debug',
-            options: {
-              translateTime: true,
-              // levelFirst: true,
-              colorize: true
-            }
-          }
-        ]
-      }
-    })
+          ]
+        }
+      })
     log.debug('BuildSqlite constructed')
   }
 
@@ -429,7 +431,7 @@ class BuildSqlite {
 
   init (cb) {
     // TODO this.env should contain configuration of the storage
-    const filename = path.resolve(process.cwd(), process.env.STORAGE_SQLITE_DB || 'tmp/database.db')
+    const filename = path.resolve(process.cwd(), this.env.SQLITE_DB || 'tmp/database.db')
     log.info('opening Sqlite3 database %s', filename)
     open({
       filename,
