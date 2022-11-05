@@ -14,5 +14,8 @@
   ],
   "scripts": {
     "test": "node ./__tests__/basic.test.js"
+  },
+  "bin": {
+    "ns-proxy-log": "bin/process-proxy-log.mjs"
   }
 }

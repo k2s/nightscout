@@ -1,0 +1,1454 @@
+{
+  "modify": {
+    "update": {
+      "entries": {
+        "8b56d502e2e173ce6839daf24a05235087f3f6a6": {
+          "item": [
+            {
+              "selector": {
+                "sysTime": "2022-11-05T17:33:04.711Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667669584711,
+                "dateString": "2022-11-05T17:33:04.711Z",
+                "sgv": 118,
+                "delta": 3.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T17:33:04.711Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T17:38:04.433Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667669884433,
+                "dateString": "2022-11-05T17:38:04.433Z",
+                "sgv": 118,
+                "delta": 3,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T17:38:04.433Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T17:43:04.857Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667670184857,
+                "dateString": "2022-11-05T17:43:04.857Z",
+                "sgv": 121,
+                "delta": 2.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T17:43:04.857Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T17:48:04.587Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667670484587,
+                "dateString": "2022-11-05T17:48:04.587Z",
+                "sgv": 128,
+                "delta": 3.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T17:48:04.587Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T17:53:04.208Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667670784208,
+                "dateString": "2022-11-05T17:53:04.208Z",
+                "sgv": 126,
+                "delta": 2.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T17:53:04.208Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:03:07.190Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667671387190,
+                "dateString": "2022-11-05T18:03:07.190Z",
+                "sgv": 113,
+                "delta": -2,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:03:07.190Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:13:05.744Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667671985744,
+                "dateString": "2022-11-05T18:13:05.744Z",
+                "sgv": 121,
+                "delta": 0.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:13:05.744Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:08:05.743Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667671685743,
+                "dateString": "2022-11-05T18:08:05.743Z",
+                "sgv": 113,
+                "delta": -1.999,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:08:05.743Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:18:06.507Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667672286507,
+                "dateString": "2022-11-05T18:18:06.507Z",
+                "sgv": 131,
+                "delta": 3.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:18:06.507Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:28:06.322Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667672886322,
+                "dateString": "2022-11-05T18:28:06.322Z",
+                "sgv": 150,
+                "delta": 7,
+                "direction": "FortyFiveUp",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:28:06.322Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:33:20.516Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667673200516,
+                "dateString": "2022-11-05T18:33:20.516Z",
+                "sgv": 147,
+                "delta": 5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:33:20.516Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:38:07.310Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667673487310,
+                "dateString": "2022-11-05T18:38:07.310Z",
+                "sgv": 145,
+                "delta": 2.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:38:07.310Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:43:05.024Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667673785024,
+                "dateString": "2022-11-05T18:43:05.024Z",
+                "sgv": 148,
+                "delta": 2,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:43:05.024Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:48:04.638Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667674084638,
+                "dateString": "2022-11-05T18:48:04.638Z",
+                "sgv": 134,
+                "delta": -2,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:48:04.638Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:53:10.475Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667674390475,
+                "dateString": "2022-11-05T18:53:10.475Z",
+                "sgv": 125,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:53:10.475Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T18:58:09.588Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667674689588,
+                "dateString": "2022-11-05T18:58:09.588Z",
+                "sgv": 126,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T18:58:09.588Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:03:18.630Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667674998630,
+                "dateString": "2022-11-05T19:03:18.630Z",
+                "sgv": 146,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:03:18.630Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:13:11.461Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667675591461,
+                "dateString": "2022-11-05T19:13:11.461Z",
+                "sgv": 158,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:13:11.461Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:18:23.561Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667675903561,
+                "dateString": "2022-11-05T19:18:23.561Z",
+                "sgv": 135,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:18:23.561Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:23:12.962Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667676192962,
+                "dateString": "2022-11-05T19:23:12.962Z",
+                "sgv": 115,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:23:12.962Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:28:12.242Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667676492242,
+                "dateString": "2022-11-05T19:28:12.242Z",
+                "sgv": 124,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:28:12.242Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:33:04.737Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667676784737,
+                "dateString": "2022-11-05T19:33:04.737Z",
+                "sgv": 147,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:33:04.737Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:38:07.682Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667677087682,
+                "dateString": "2022-11-05T19:38:07.682Z",
+                "sgv": 164,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:38:07.682Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:43:18.692Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667677398692,
+                "dateString": "2022-11-05T19:43:18.692Z",
+                "sgv": 166,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:43:18.692Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T19:53:04.383Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667677984383,
+                "dateString": "2022-11-05T19:53:04.383Z",
+                "sgv": 173,
+                "delta": -1.999,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T19:53:04.383Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T20:03:04.633Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667678584633,
+                "dateString": "2022-11-05T20:03:04.633Z",
+                "sgv": 171,
+                "delta": 1.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T20:03:04.633Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T20:13:04.242Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667679184242,
+                "dateString": "2022-11-05T20:13:04.242Z",
+                "sgv": 163,
+                "delta": -1,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T20:13:04.242Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T20:08:04.241Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667678884241,
+                "dateString": "2022-11-05T20:08:04.241Z",
+                "sgv": 164,
+                "delta": -1.999,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T20:08:04.241Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T20:23:04.248Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667679784248,
+                "dateString": "2022-11-05T20:23:04.248Z",
+                "sgv": 171,
+                "delta": 1.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T20:23:04.248Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T20:33:05.069Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667680385069,
+                "dateString": "2022-11-05T20:33:05.069Z",
+                "sgv": 164,
+                "delta": -1.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T20:33:05.069Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T20:43:05.064Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667680985064,
+                "dateString": "2022-11-05T20:43:05.064Z",
+                "sgv": 157,
+                "delta": -2.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T20:43:05.064Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T20:53:05.223Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667681585223,
+                "dateString": "2022-11-05T20:53:05.223Z",
+                "sgv": 153,
+                "delta": -2.5,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T20:53:05.223Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T21:03:04.498Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667682184498,
+                "dateString": "2022-11-05T21:03:04.498Z",
+                "sgv": 122,
+                "delta": -9,
+                "direction": "FortyFiveDown",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T21:03:04.498Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T21:13:04.483Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667682784483,
+                "dateString": "2022-11-05T21:13:04.483Z",
+                "sgv": 135,
+                "delta": 6.5,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T21:13:04.483Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T21:23:05.352Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667683385352,
+                "dateString": "2022-11-05T21:23:05.352Z",
+                "sgv": 145,
+                "delta": 1,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T21:23:05.352Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T21:18:05.352Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667683085352,
+                "dateString": "2022-11-05T21:18:05.352Z",
+                "sgv": 134,
+                "delta": 11,
+                "direction": "Flat",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T21:18:05.352Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T21:53:05.413Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667685185413,
+                "dateString": "2022-11-05T21:53:05.413Z",
+                "sgv": 135,
+                "delta": -1.667,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T21:53:05.413Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T22:03:04.782Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667685784782,
+                "dateString": "2022-11-05T22:03:04.782Z",
+                "sgv": 118,
+                "delta": -8.509,
+                "direction": "NotComputable",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T22:03:04.782Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T22:13:05.079Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667686385079,
+                "dateString": "2022-11-05T22:13:05.079Z",
+                "sgv": 95,
+                "delta": -7.5,
+                "direction": "FortyFiveDown",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T22:13:05.079Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T22:23:04.689Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667686984689,
+                "dateString": "2022-11-05T22:23:04.689Z",
+                "sgv": 79,
+                "delta": -7.5,
+                "direction": "FortyFiveDown",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T22:23:04.689Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T22:28:08.441Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667687288441,
+                "dateString": "2022-11-05T22:28:08.441Z",
+                "sgv": 53,
+                "delta": -12,
+                "direction": "SingleDown",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T22:28:08.441Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "selector": {
+                "sysTime": "2022-11-05T22:33:05.222Z",
+                "type": "sgv"
+              },
+              "options": {
+                "upsert": true
+              },
+              "update": {
+                "device": "xDrip-Follower",
+                "date": 1667687585222,
+                "dateString": "2022-11-05T22:33:05.222Z",
+                "sgv": 57,
+                "delta": -10,
+                "direction": "SingleDown",
+                "type": "sgv",
+                "filtered": 0,
+                "unfiltered": 0,
+                "rssi": 100,
+                "noise": 1,
+                "sysTime": "2022-11-05T22:33:05.222Z",
+                "utcOffset": 60
+              }
+            }
+          ],
+          "count": 42
+        }
+      }
+    },
+    "insertOne": {
+      "devicestatus": {
+        "afd49fefd31b92564c005a0be28a7375c07c82b7": {
+          "item": [
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 65,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T20:53:10.901Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 64,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T21:03:10.009Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 64,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T21:13:12.032Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 63,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T21:23:10.925Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 63,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T21:24:18.085Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 63,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T21:53:11.035Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 63,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T22:03:10.395Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 62,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T22:13:10.213Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 58,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T22:23:11.155Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 58,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T22:28:14.174Z",
+                "utcOffset": 60
+              }
+            },
+            {
+              "doc": {
+                "device": "Xiaomi Mi 9 SE",
+                "uploader": {
+                  "battery": 58,
+                  "type": "PHONE"
+                },
+                "created_at": "2022-11-05T22:33:10.292Z",
+                "utcOffset": 60
+              }
+            }
+          ],
+          "count": 11
+        }
+      }
+    }
+  },
+  "queries": {
+    "auth_roles": {
+      "961c6611676b99270b961d90b2e99898c65b762d": {
+        "item": {
+          "filter": {},
+          "sort": {
+            "keyOrList": {
+              "name": 1
+            }
+          }
+        },
+        "count": 1,
+        "comment": "sort by name ASC; no filter; PROBLEM too much data"
+      }
+    },
+    "auth_subjects": {
+      "05511131e65a6d0bb6281d9e571983a6bab0e5da": {
+        "item": {
+          "filter": {},
+          "sort": {
+            "keyOrList": {
+              "name": 1
+            }
+          }
+        },
+        "count": 1,
+        "comment": "sort by name ASC; no filter; PROBLEM too much data"
+      }
+    },
+    "treatments": {
+      "74fe9482573a2cf59d30e4ce346a0a6f61434d5f": {
+        "item": {
+          "filter": {
+            "created_at": {
+              "$gte": "2022-11-03T08:49:52.878Z"
+            }
+          },
+          "sort": {
+            "keyOrList": {
+              "created_at": 1
+            }
+          },
+          "__timeDistance": "2d 12h"
+        },
+        "count": 117,
+        "comment": "sort by created_at ASC; simple date index"
+      },
+      "fcb2178acb2a1b0f749e4fd82feea6aaacbe9be5": {
+        "item": {
+          "filter": {
+            "eventType": "Profile Switch",
+            "created_at": {
+              "$gte": "2021-10-29T20:49:52.878Z"
+            },
+            "duration": 0
+          },
+          "sort": {
+            "keyOrList": {
+              "created_at": -1
+            }
+          },
+          "limit": 1,
+          "__timeDistance": "1y 7d"
+        },
+        "count": 117,
+        "comment": "sort by created_at DESC; limit 1; has date index + MORE"
+      },
+      "46f578573c564fa55a0bff9ea70da41747486d33": {
+        "item": {
+          "filter": {
+            "eventType": {
+              "$eq": "Sensor Start"
+            },
+            "created_at": {
+              "$gte": "2022-09-04T20:49:52.878Z"
+            }
+          },
+          "sort": {
+            "keyOrList": {
+              "created_at": -1
+            }
+          },
+          "limit": 1,
+          "__timeDistance": "62d"
+        },
+        "count": 702,
+        "comment": "sort by created_at DESC; limit 1; has date index + MORE"
+      },
+      "6f8a6877a7715eb3e91f041d7489453bbc4939a5": {
+        "item": {
+          "filter": {
+            "created_at": {
+              "$gte": "2022-11-01T20:53:11.012Z"
+            }
+          },
+          "sort": {
+            "keyOrList": {
+              "created_at": -1
+            }
+          },
+          "limit": 100,
+          "__timeDistance": "4d"
+        },
+        "count": 13,
+        "comment": "sort by created_at DESC; limit 100; simple date index"
+      }
+    },
+    "food": {
+      "e6f3df0d182e97c500df137cb77d64f4b1f841b7": {
+        "item": {
+          "filter": {}
+        },
+        "count": 117,
+        "comment": "no filter; PROBLEM too much data"
+      }
+    },
+    "devicestatus": {
+      "62f5c03ecfae7ae97c5610d0efa6ce29727e3522": {
+        "item": {
+          "filter": {
+            "created_at": {
+              "$gte": "2022-11-04T20:49:52.878Z"
+            }
+          },
+          "sort": {
+            "keyOrList": {
+              "created_at": -1
+            }
+          },
+          "__timeDistance": "1d"
+        },
+        "count": 117,
+        "comment": "sort by created_at DESC; simple date index"
+      }
+    },
+    "activity": {
+      "bed3602f54982e715ac367acff3aa2b201367c71": {
+        "item": {
+          "filter": {
+            "created_at": {
+              "$gte": "2022-11-03T20:49:52.878Z"
+            }
+          },
+          "sort": {
+            "keyOrList": {
+              "created_at": 1
+            }
+          },
+          "__timeDistance": "2d"
+        },
+        "count": 117,
+        "comment": "sort by created_at ASC; simple date index"
+      }
+    },
+    "entries": {
+      "ea41c955527e00f9887878be36cb8503fa7f64e0": {
+        "item": {
+          "filter": {
+            "date": {
+              "$gte": 1667508592878
+            }
+          },
+          "sort": {
+            "keyOrList": {
+              "date": 1
+            }
+          }
+        },
+        "count": 117,
+        "comment": "sort by date ASC"
+      }
+    },
+    "profile": {
+      "6c2965dd2974299ed6b9a3098996951968bee0a0": {
+        "item": {
+          "sort": {
+            "keyOrList": {
+              "startDate": -1
+            }
+          },
+          "limit": 1
+        },
+        "count": 117,
+        "comment": "sort by startDate DESC; limit 1; LIMIT 1"
+      }
+    }
+  },
+  "indexes": {
+    "entries(date)": true,
+    "entries(type)": true,
+    "entries(sgv)": true,
+    "entries(mbg)": true,
+    "entries(sysTime)": true,
+    "entries(dateString)": true,
+    "entries(type,date,dateString)": true,
+    "treatments(created_at)": true,
+    "treatments(eventType)": true,
+    "treatments(insulin)": true,
+    "treatments(carbs)": true,
+    "treatments(glucose)": true,
+    "treatments(enteredBy)": true,
+    "treatments(boluscalc.foods._id)": true,
+    "treatments(notes)": true,
+    "treatments(NSCLIENT_ID)": true,
+    "treatments(percent)": true,
+    "treatments(absolute)": true,
+    "treatments(duration)": true,
+    "treatments(eventType,duration,created_at)": true,
+    "devicestatus(created_at)": true,
+    "devicestatus(NSCLIENT_ID)": true,
+    "profile(startDate)": true,
+    "food(type)": true,
+    "food(position)": true,
+    "food(hidden)": true,
+    "activity(created_at)": true,
+    "devicestatus(identifier)": true,
+    "devicestatus(srvModified)": true,
+    "devicestatus(isValid)": true,
+    "entries(identifier)": true,
+    "entries(srvModified)": true,
+    "entries(isValid)": true,
+    "food(identifier)": true,
+    "food(srvModified)": true,
+    "food(isValid)": true,
+    "profile(identifier)": true,
+    "profile(srvModified)": true,
+    "profile(isValid)": true,
+    "settings(identifier)": true,
+    "settings(srvModified)": true,
+    "settings(isValid)": true,
+    "treatments(identifier)": true,
+    "treatments(srvModified)": true,
+    "treatments(isValid)": true
+  },
+  "restarts": 0,
+  "unknown": {},
+  "unknownHashes": [],
+  "collectProps": {
+    "auth_subjects": {
+      "toJSON": 1,
+      "_id": 2,
+      "name": 2,
+      "roles": 1,
+      "notes": 1,
+      "created_at": 1,
+      "digest": 1,
+      "accessToken": 1
+    },
+    "treatments": {
+      "toJSON": 4,
+      "_id": 8,
+      "timestamp": 8,
+      "eventType": 8,
+      "enteredBy": 8,
+      "uuid": 8,
+      "insulin": 8,
+      "insulinInjections": 8,
+      "created_at": 8,
+      "sysTime": 8,
+      "utcOffset": 8,
+      "carbs": 2,
+      "length": 4
+    },
+    "devicestatus": {
+      "toJSON": 11,
+      "_id": 22,
+      "device": 22,
+      "uploader": 22,
+      "created_at": 22,
+      "utcOffset": 22,
+      "length": 11
+    },
+    "tomi": {
+      "toJSON": 441,
+      "_id": 882,
+      "device": 882,
+      "date": 882,
+      "dateString": 882,
+      "sgv": 880,
+      "delta": 880,
+      "direction": 880,
+      "type": 882,
+      "filtered": 880,
+      "unfiltered": 880,
+      "rssi": 880,
+      "noise": 880,
+      "sysTime": 882,
+      "utcOffset": 882,
+      "mbg": 2,
+      "length": 441
+    },
+    "profile": {
+      "toJSON": 1,
+      "_id": 4,
+      "defaultProfile": 3,
+      "store": 6,
+      "startDate": 3,
+      "mills": 3,
+      "units": 3,
+      "created_at": 3,
+      "length": 1
+    }
+  }
+}

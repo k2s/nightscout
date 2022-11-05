@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="process proxy log ALL" type="NodeJSConfigurationType" application-parameters="$PROJECT_DIR$/app/cgm-remote-monitor/tmp/storage-proxy.log $PROJECT_DIR$/app/cgm-remote-monitor/tmp/storage-proxy.json" path-to-js-file="process-proxy-log.mjs" working-dir="$PROJECT_DIR$/packages/nightscout-storage-basic/bin">
+    <envs>
+      <env name="CUSTOMCONNSTR_mongo_collection" value="tomi" />
+    </envs>
+    <method v="2" />
+  </configuration>
+</component>

@@ -78,6 +78,8 @@ I am not sure now what would be the best way to configure storage driver and its
   - `STORAGE_SQLITE_LOGFILE_LEVEL`: log level for file output (see Pino) (default: `trace`)  
   - `STORAGE_SQLITE_CONSOLE_LEVEL`: log level for console output (see Pino) (default: `debug`)
 - `STORAGE_CLASS=fallack@nightscout-storage-basic`: it uses the original MongoDB driver, easy proof that it works and usable with `multi@nightscout-storage-basic`
+- `STORAGE_CLASS=proxy@nightscout-storage-base`: uses SQLite3 database
+  - `STORAGE_PROXY_TIMING`: if set to 1 the log will contain timing information about the call (TODO)
 
 Currently, not committed storage drivers (mainly used for development):
 
