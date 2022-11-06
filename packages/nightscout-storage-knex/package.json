@@ -1,0 +1,30 @@
+{
+  "name": "nightscout-storage-knex",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "k2s <martin.minka@gmail.com>",
+  "homepage": "https://github.com/k2s/nightscout#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k2s/nightscout.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/cosmosdb.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/k2s/nightscout/issues"
+  },
+  "dependencies": {
+    "knex": "^2.3.0",
+    "sqlite3": "^5.1.2"
+  }
+}
