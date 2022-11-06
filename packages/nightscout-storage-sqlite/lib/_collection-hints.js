@@ -60,10 +60,10 @@ function buildHints (env) {
 async function createCollection (db, name, def, withIndexes = true) {
   if (def.tsField) {
     // data are time series
-    await db.exec(`CREATE TABLE IF NOT EXISTS '${name}' (_id NOT NULL, ts INTEGER NOT NULL, json TEXT, PRIMARY KEY('_id'))`)
+    await db.exec(`CREATE TABLE IF NOT EXISTS '${name}' (_id NOT NULL, ts INTEGER NOT NULL, json json, PRIMARY KEY('_id'))`)
   } else {
     // other type of data
-    await db.exec(`CREATE TABLE IF NOT EXISTS '${name}' (_id NOT NULL, json TEXT, PRIMARY KEY('_id'))`)
+    await db.exec(`CREATE TABLE IF NOT EXISTS '${name}' (_id NOT NULL, json json, PRIMARY KEY('_id'))`)
   }
 
   if (withIndexes) {
