@@ -13,24 +13,6 @@ const mapOperator = {
   $nin: 'not in'
 }
 
-function operator (d, convertFn) {
-  let [op, v] = typeof d === 'object' ? Object.entries(d)[0] : ['$eq', d]
-  if (convertFn) {
-    v = convertFn(v)
-  }
-  let o = mapOperator[op]
-  if (!o) {
-    log.error({
-      collection: colName,
-      op,
-      d
-    }, 'unknown condition operator')
-    o = '='
-  }
-
-  return o + (typeof v === 'string' ? `'${v}'` : v) // TODO string?
-}
-
 class Collection {
   static factory (name, driver, def) {
     return new Collection(name, driver, def)
@@ -45,6 +27,32 @@ class Collection {
     this.logSql = driver.logSql
   }
 
+  operator (colName, d, convertFn) {
+    if (typeof d !== 'object') {
+      d = { $eq: d }
+    }
+
+    const a = []
+    for (let [op, v] of Object.entries(d)) {
+      if (convertFn) {
+        v = convertFn(v)
+      }
+      let o = mapOperator[op]
+      if (!o) {
+        this.log.error({
+          collection: colName,
+          op,
+          d
+        }, 'unknown condition operator')
+        o = '='
+      }
+
+      a.push( colName + o + (typeof v === 'string' ? `'${v}'` : v)) // TODO string?
+    }
+
+    return a.join(' AND ')
+  }
+
   _makeSql (collection, query) {
     // if (collection ==='food') debugger
     const d = this._def
@@ -56,14 +64,14 @@ class Collection {
         for (let [k, v] of Object.entries(query.filter)) {
           if (k === d.tsField) {
             if (d.tsAsString) {
-              where.push('ts' + operator(v, v => Date.parse(v)))
+              where.push(this.operator('ts', v, v => Date.parse(v)))
             } else {
-              where.push('ts' + operator(v))
+              where.push(this.operator('ts', v))
             }
           } else if (k === '_id') {
-            where.push('_id' + operator(v.toString()))
+            where.push(this.operator('_id', v.toString()))
           } else {
-            where.push(`JSON_EXTRACT(json, '$.${k}')` + operator(v))
+            where.push(this.operator(`JSON_EXTRACT(json, '$.${k}')`, v))
           }
         }
       }
