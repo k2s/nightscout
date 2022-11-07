@@ -428,12 +428,18 @@ class Collection {
 
     const sql = this._makeSql(this.name, { filter: selector })
     this._d.run('DELETE ' + sql)
-      .then(() => {
+      .then(result => {
         this.logSql && this.log.trace({
           collection: this.name,
           selector
         }, 'remove')
-        callback(null)
+        const r = {
+          result: {
+            ok: 1,
+            n: result.changes
+          }
+        }
+        callback(null, r)
       })
       .catch(err => {
         this.log.error({
