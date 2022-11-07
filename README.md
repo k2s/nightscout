@@ -105,6 +105,13 @@ STORAGE_CLASS=@nightscout-storage-sqlite
 STORAGE_SQLITE_DB=/tmp/nightscout.sqlite3
 ```
 
+#### knex
+
+```bash
+STORAGE_CLASS=@nightscout-storage-knex
+STORAGE_KNEX_CONNECTION=/tmp/ns-knex.sqlite3
+```
+
 ## TODO
 
 - [ ] what would be correct way to configure storages with `process.env` ? (`STORAGE_CLASS`, `STORAGE_SQLITE_DB`)
